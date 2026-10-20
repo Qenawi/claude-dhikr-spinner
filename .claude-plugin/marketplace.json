@@ -1,11 +1,16 @@
 {
   "name": "dhikr-spinner",
-  "owner": { "name": "Ahmed Mohamed" },
+  "owner": {
+    "name": "Ahmed Mohamed"
+  },
   "plugins": [
     {
       "name": "islamic-dhikr-spinner",
       "source": "./",
       "description": "Replaces Claude Code's spinner words with short Islamic dhikr/du'a phrases in Arabic."
     }
-  ]
+  ],
+  "metadata": {
+    "description": "Islamic dhikr/du'a phrases as Claude Code spinner words."
+  }
 }
