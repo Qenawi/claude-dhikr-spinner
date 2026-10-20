@@ -1,6 +1,6 @@
 {
   "name": "islamic-dhikr-spinner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Replaces Claude Code's spinner words with short Islamic dhikr/du'a phrases in Arabic.",
   "author": { "name": "Ahmed Mohamed" },
   "keywords": ["spinner", "spinnerVerbs", "dhikr", "arabic"],
