@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img src="assets/logo.svg" width="160" alt="A ring of 33 prayer beads around the words سبحان الله">
+  </picture>
+</p>
+
 # Islamic Dhikr Spinner (Claude Code plugin)
 
 Replaces Claude Code's spinner words ("Pondering…", "Flibbertigibbeting…") with 20 short dhikr/du'a phrases in Arabic.
