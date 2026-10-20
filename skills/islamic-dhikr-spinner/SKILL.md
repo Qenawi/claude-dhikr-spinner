@@ -52,8 +52,11 @@ This skill merges the following into the user's **global** `~/.claude/settings.j
 
 ## Notes for engineers reusing this skill
 
+- Since 1.1.0, the plugin's SessionStart hook (`scripts/apply_spinner.py`) writes this list automatically when `spinnerVerbs` is missing. Use this skill to force the list over an existing `spinnerVerbs` value, or to re-apply it.
+- If you change the phrase list, update it both here and in `scripts/apply_spinner.py`.
+
 - This is a **global** setting — it changes every Claude Code session for that user's machine, not just one project.
 - Re-running this skill is safe — it just overwrites the `spinnerVerbs` key again.
-- To remove it later, delete the `spinnerVerbs` key from `~/.claude/settings.json`.
+- To remove it later, uninstall the plugin first, then delete the `spinnerVerbs` key from `~/.claude/settings.json`. If the plugin is still installed, the hook adds the key back.
 - To use a different word list instead of this fixed one, edit `verbs` directly, or ask Claude: "change my spinnerVerbs to append with [words]". The schema is `{ mode: "append" | "replace", verbs: string[] }` — `append` adds to Claude Code's built-in whimsical list, `replace` shows only your words.
 - To share this with a teammate: `/plugin marketplace add Qenawi/claude-dhikr-spinner` then `/plugin install islamic-dhikr-spinner@dhikr-spinner`.
