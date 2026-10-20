@@ -5,7 +5,7 @@ Replaces Claude Code's spinner words ("Pondering…", "Flibbertigibbeting…") w
 ## Install
 
 ```
-/plugin marketplace add <github-user>/claude-dhikr-spinner
+/plugin marketplace add Qenawi/claude-dhikr-spinner
 /plugin install islamic-dhikr-spinner@dhikr-spinner
 ```
 

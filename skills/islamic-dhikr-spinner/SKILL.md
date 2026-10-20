@@ -56,4 +56,4 @@ This skill merges the following into the user's **global** `~/.claude/settings.j
 - Re-running this skill is safe — it just overwrites the `spinnerVerbs` key again.
 - To remove it later, delete the `spinnerVerbs` key from `~/.claude/settings.json`.
 - To use a different word list instead of this fixed one, edit `verbs` directly, or ask Claude: "change my spinnerVerbs to append with [words]". The schema is `{ mode: "append" | "replace", verbs: string[] }` — `append` adds to Claude Code's built-in whimsical list, `replace` shows only your words.
-- To share this with a teammate: `/plugin marketplace add <github-user>/claude-dhikr-spinner` then `/plugin install islamic-dhikr-spinner@dhikr-spinner`.
+- To share this with a teammate: `/plugin marketplace add Qenawi/claude-dhikr-spinner` then `/plugin install islamic-dhikr-spinner@dhikr-spinner`.
